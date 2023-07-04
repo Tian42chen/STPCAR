@@ -5,6 +5,7 @@ data/raw/
 data/train/
 data/test/
 STPCAR.pdf
+*.ipynb
 
 ### LaTeX ###
 ## Core latex/pdflatex auxiliary files:

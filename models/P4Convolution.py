@@ -7,6 +7,7 @@ from utils import gather_operation, furthest_point_sample
 
 
 def testtt():
-    Input=torch.randn(1, 1024, 3).cuda()
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    Input=torch.randn(1, 1024, 3).to(device)
     output=furthest_point_sample(Input, 512)
     print(output.shape)

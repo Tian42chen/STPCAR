@@ -102,3 +102,6 @@ def load_pcd(name):
     """
     pcd_tuples = np.load(f"{pcd_data_path}{name}_pcd.npy", allow_pickle=True)
     return [np.array(point) for point in pcd_tuples]
+
+if __name__ == "__main__":
+    save_all_depth_as_pcd()

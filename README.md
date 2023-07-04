@@ -26,7 +26,7 @@ STPCAR/
 └── README.md
 ```
 
-## Data
+## Dataset
 使用 MSR-Action3D 数据集，记录了人体动作序列，共包含20个动作类型，10个被试者，每个被试者执行每个动作2或3次。 总共有567个深度图序列。 分辨率为640x240。 用类似于Kinect装置的深度传感器记录数据。
 
 文件名 a01_s01_e01: actions 1 performed by subjects 1 with instances 1
@@ -54,8 +54,12 @@ actions 对应的动作类型如下：
 1. pick up & throw
 
 ## Installation
-
+### Requirements
 ```
 cd utils
 python setup.py install
 ```
+安装 `pointnet2._ext`
+
+### Data
+下载MSR-Action3D 深度数据，解压到`data/raw/Depth`目录下，运行`data/preprocess.py`，将深度图转换为点云数据，保存在`data/raw/point_clouds`目录下。
