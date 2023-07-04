@@ -2,14 +2,23 @@
 Spatio-Temporal Point Cloud Action Recognition
 
 ```
-STPCAR
-├── data
-│  └── 
-├── datasets
-│  └── 
-├── models
-│  └── 
-├── scheduler.py
+STPCAR/
+├── data/
+│   ├── raw/
+│   ├── train/
+│   ├── test/
+│   ├── dataset.py
+│   └── preprocess.py
+├── models/
+│   ├── __init__.py
+│   ├── Transformer.py
+│   ├── P4Convolution.py
+│   └── P4Transformer.py
+├── utils/
+│   ├── __init__.py
+│   └── utils.py
+├── config.py
 ├── train.py
-└── utils.py
+├── test.py
+└── README.md
 ```
