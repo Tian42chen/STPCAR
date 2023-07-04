@@ -52,3 +52,10 @@ actions 对应的动作类型如下：
 1. tennis serve
 1. golf swing
 1. pick up & throw
+
+## Installation
+
+```
+cd utils
+python setup.py install
+```
