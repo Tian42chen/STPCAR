@@ -75,5 +75,5 @@ class MSRAction3D(Dataset):
 
         clip = clip / 300
 
-        return clip.astype(np.float32), label, index
+        return clip.astype(np.float32), label
 

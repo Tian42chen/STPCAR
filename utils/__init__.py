@@ -1,1 +1,1 @@
-from .pointnet2_utils import gather_operation, furthest_point_sample
+from . import pointnet2_utils
