@@ -61,7 +61,9 @@ python setup.py install
 ```
 安装 `pointnet2._ext`
 
-这里使用 github copilot chat 把 cuda 的代码转化为了 c++ 的代码以支持 cpu，但是没有测试过，可能会有问题
+~~这里使用 github copilot chat 把 cuda 的代码转化为了 c++ 的代码以支持 cpu，但是没有测试过，可能会有问题~~
+
+太多函数是使用 cuda 实现的了, 难以支持 cpu 版本
 
 ### Data
 下载MSR-Action3D 深度数据，解压到`data/raw/Depth`目录下，运行`data/preprocess.py`，将深度图转换为点云数据，保存在`data/raw/point_clouds`目录下。读取深度图借鉴了 `Load MSRAction3D_depth.zip` 中 matlab 代码
