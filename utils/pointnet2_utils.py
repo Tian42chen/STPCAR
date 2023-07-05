@@ -67,7 +67,7 @@ class FurthestPointSampling(Function):
 
         Returns
         -------
-        torch.Tensor
+        xyz_ : torch.Tensor
             (B, npoint) tensor containing the set
         """
         fps_inds = _ext.furthest_point_sampling(xyz, npoint)
