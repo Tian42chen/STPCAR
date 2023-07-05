@@ -6,16 +6,15 @@ import matplotlib.pyplot as plt
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-raw_data_path = './raw/Depth/'
-pcd_data_path = './raw/point_clouds/'
-
 def loadDepthMap(path):
     """
     This function reads a depth image from MSR Action3D dataset
-    Input:
-        path - location of the bin file
-    Output:
-        depthMap - depth image
+    Parameters
+    ----------
+    path : location of the bin file
+    Returns
+    -------
+    depthMap : depth image
     """
     with open(path, 'rb') as fid:
         numFrames, dims = readHeader(fid)
@@ -40,8 +39,9 @@ def readHeader(fid):
 def showDepthMap(depthMap):
     """
     This function shows a depth image from MSR Action3D dataset
-    Input:
-        depthMap - depth image
+    Parameters
+    ----------
+    depthMap : depth image
     """
     depthMap = np.array(depthMap)
     plt.imshow(depthMap)
@@ -52,10 +52,12 @@ def showDepthMap(depthMap):
 def depth2pcd(depthMap):
     """
     This function convert a depth image from MSR Action3D dataset to a point cloud
-    Input:
-        depthMap - depth image
-    Output:
-        pcd - point cloud
+    Parameters
+    ----------
+    depthMap : depth image
+    Returns
+    -------
+    pcd : point cloud
     """
     x, y = depthMap.shape
     xx, yy = np.meshgrid(np.arange(x), np.arange(y), indexing='ij')
@@ -67,41 +69,53 @@ def depth2pcd(depthMap):
     
     return np.stack((xx, yy, zz), axis=-1)
 
-def save_depth_as_pcd(name):
+def save_depth_as_pcd(path, topath, name):
     """
     This function load a depth image from MSR Action3D dataset, convert it to a point cloud and save it
-    Input:
-        name - name of the file
+    Parameters
+    ----------
+    path : location of the bin file
+    topath : location to save the point cloud
+    name : name of the file
     """
     logging.info(f"Converting depth map to point cloud for file {name}")
-    depthmap = loadDepthMap(f"{raw_data_path}{name}_sdepth.bin")
+    depthmap = loadDepthMap(f"{path}{name}_sdepth.bin")
 
     pcd = [depth2pcd(depthmap[i]) for i in range(len(depthmap))]
     pcd_tuples = [tuple(point) for point in pcd]
     
-    np.save(f"{pcd_data_path}{name}_pcd.npy", np.array(pcd_tuples, dtype=object))
+    np.save(f"{topath}{name}_pcd.npy", np.array(pcd_tuples, dtype=object))
 
-def save_all_depth_as_pcd():
+def save_all_depth_as_pcd(path, topath):
     """
     This function load all depth images from MSR Action3D dataset, convert them to point clouds and save them
+    Parameters
+    ----------
+    path : location of the bin files
+    topath : location to save the point clouds
     """
     logging.info("Starting to process all depth images")
     
-    for filename in os.listdir(raw_data_path):
-        save_depth_as_pcd(filename[:filename.rfind('_')])
+    for filename in os.listdir(path):
+        save_depth_as_pcd(path, topath, filename[:filename.rfind('_')])
     
     logging.info("Finished processing all depth images")
 
-def load_pcd(name):
+def load_pcd(path, name):
     """
     This function load a point cloud from MSR Action3D dataset
-    Input:
-        name - name of the file
-    Output:
-        pcd - point cloud
+    Parameters
+    ----------
+    path : location of the point cloud
+    name : name of the file
+    Returns
+    -------
+    pcd : point cloud
     """
-    pcd_tuples = np.load(f"{pcd_data_path}{name}_pcd.npy", allow_pickle=True)
+    pcd_tuples = np.load(f"{path}{name}_pcd.npy", allow_pickle=True)
     return [np.array(point) for point in pcd_tuples]
 
 if __name__ == "__main__":
-    save_all_depth_as_pcd()
+    raw_data_path = './raw/testDepth/'
+    pcd_data_path = './raw/testpcd/'
+    save_all_depth_as_pcd(raw_data_path, pcd_data_path)

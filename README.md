@@ -7,8 +7,6 @@ STPCAR/
 │   ├── raw/
 │   │   ├── Depth/
 │   │   └── point_clouds/
-│   ├── train/
-│   ├── test/
 │   ├── __init__.py
 │   ├── dataset.py
 │   └── preprocess.py
