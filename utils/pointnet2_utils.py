@@ -278,7 +278,7 @@ class BallQuery(Function):
 
         Returns
         -------
-        torch.Tensor
+        inds : torch.Tensor
             (B, npoint, nsample) tensor with the indicies of the features that form the query balls
         """
         inds = _ext.ball_query(new_xyz, xyz, radius, nsample)
