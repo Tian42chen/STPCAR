@@ -4,11 +4,18 @@ momentum = 0.9
 weight_decay = 1e-4
 batch_size = 16
 num_epochs = 30
-print_interval=100
+print_interval=10
+# num_epochs = 50
+# print_interval = 100
 workers=4
 
+lr_milestones=[12, 18]
+# lr_milestones=[20, 30]
+lr_gamma=0.1
+lr_warmup_epochs=10
+
 # Data paths
-data_path = './data/raw/pcd/'
+data_path = './data/raw/testpcd/'
 
 # Model paths
 save_model_path = './checkpoints/'

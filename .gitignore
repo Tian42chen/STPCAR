@@ -4,7 +4,7 @@
 data/raw/
 data/train/
 data/test/
-checkpoints/
+checkpoints*/
 STPCAR.pdf
 *.ipynb
 

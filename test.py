@@ -8,7 +8,7 @@ import time
 
 from models import P4Transformer
 from data import MSRAction3D
-from utils import accuracy, MetricLogger
+from utils import accuracy
 import config
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -32,21 +32,32 @@ def test(model, test_loader):
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
 
-        print(f'Accuracy of the network on the test clips: {100 * correct / total} %')
+        log='Accuracy of the network on the {} test clips: {:.2f}%\n'.format(total, 100 * correct / total)
+        print(log, end='')
+        with open('log.txt', 'a') as f:
+            f.write(log)
+        
     print('Finished testing in {:.2f} seconds'.format(time.time() - start_time))
+
+
+def load_and_test(load_name, model, test_loader):
+    # Test model
+    print('Test model: ', load_name)
+    load_model(model, load_name)
+    test(model, test_loader)
 
 def main():
     # Parameters
     assert(device != 'cpu'), 'No GPU available'
-    
+
     # Load test set
     print('Loading data...')
-    test_set = MSRAction3D(config.data_path, train=False, transform=transforms.Compose([transforms.ToTensor()]))
+    test_set = MSRAction3D(config.data_path, train=False)
+
+    print(f'Number of test clips: {len(test_set)}')
 
     print('Creating data loader...')
     test_loader = torch.utils.data.DataLoader(test_set, batch_size=config.batch_size, shuffle=False, num_workers=2)
-
-    print(f'Number of test clips: {len(test_data)}')
 
     # Load model
     model = P4Transformer(
@@ -56,10 +67,10 @@ def main():
         dim=config.dim, depth=config.depth, heads=config.heads, dim_head=config.dim_head,  # transformer
         mlp_dim=config.mlp_dim, num_classes=config.num_classes # output
     ).to(device)
-    load_model(model, 'P4T-epoch50.pth')
 
-    # Test model
-    test(model, test_loader)
+    load_and_test('P4T-epoch20.pth', model, test_loader)
+    load_and_test('P4T-epoch30.pth', model, test_loader)
+    load_and_test('P4T-epoch50.pth', model, test_loader)
 
 if __name__ == '__main__':
     main()
