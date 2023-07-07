@@ -36,6 +36,20 @@ def readHeader(fid):
     dims = np.frombuffer(fid.read(8), dtype=np.uint32)
     return numFrames, dims
 
+def showpcd(pcd):
+    """
+    This function shows a point cloud from MSR Action3D dataset
+    Parameters
+    ----------
+    pcd : point cloud
+    """
+    pcd = np.array(pcd)
+    plt.scatter(pcd[:, 1], pcd[:, 0], c=pcd[:, 2])
+    # plt.gca().invert_yaxis()
+    plt.axis('equal')
+    plt.colorbar()
+    plt.show()
+
 def showDepthMap(depthMap):
     """
     This function shows a depth image from MSR Action3D dataset
