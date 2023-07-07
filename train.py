@@ -16,10 +16,6 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 def save_model(model, name):
     print('Saving model...')
     torch.save(model.state_dict(), config.save_model_path + name)
-    
-def load_model(model, name):
-    print('Loading model...')
-    model.load_state_dict(torch.load(config.save_model_path + name))
 
 def train(model, train_loader, criterion, optimizer):
     print('Training...')
@@ -49,10 +45,10 @@ def train(model, train_loader, criterion, optimizer):
             running_acc += acc1[0].item()
             
             if (i+1) % config.print_interval == 0:
-                print (
-                    'Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}, Accuracy: {:.2f}%'
-                    .format(epoch+1, config.num_epochs, i+1, len(train_loader), running_loss/config.print_interval, running_acc/config.print_interval)
-                )
+                log='Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}, Accuracy: {:.2f}%'.format(epoch+1, config.num_epochs, i+1, len(train_loader), running_loss/config.print_interval, running_acc/config.print_interval)
+                print (log)
+                with open('log.txt', 'a') as f:
+                    f.write(log)
                 running_loss = 0.0
                 running_acc = 0.0
         
@@ -60,39 +56,18 @@ def train(model, train_loader, criterion, optimizer):
 
     print('Finished training in {:.2f} seconds'.format(time.time() - start_time))
 
-def test(model, test_loader):
-    print('Testing...')
-    start_time = time.time()
-    model.eval()
-    with torch.no_grad():
-        correct = 0
-        total = 0
-        for clip, labels in test_loader:
-            clip = clip.to(device)
-            labels = labels.to(device)
-            outputs = model(clip)
-            _, predicted = torch.max(outputs.data, 1)
-            total += labels.size(0)
-            correct += (predicted == labels).sum().item()
-
-        print(f'Accuracy of the network on the test clips: {100 * correct / total} %')
-    print('Finished testing in {:.2f} seconds'.format(time.time() - start_time))
-
 def main():
     # Parameters
     assert(device != 'cpu'), 'No GPU available'
 
     # Load data
     print('Loading data...')
-    train_data = MSRAction3D(config.data_path, train=True)
-    test_data = MSRAction3D(config.data_path, train=False)
+    train_set = MSRAction3D(config.data_path, train=True, transform=transforms.Compose([transforms.ToTensor()]))
 
-    print('Creating data loaders...')
-    train_loader = torch.utils.data.DataLoader(train_data, batch_size=config.batch_size, shuffle=True)
-    test_loader = torch.utils.data.DataLoader(test_data, batch_size=config.batch_size, shuffle=False)
+    print('Creating data loader...')
+    train_loader = torch.utils.data.DataLoader(train_set, batch_size=config.batch_size, shuffle=True, num_workers=2)
 
     print(f'Number of training clips: {len(train_data)}')
-    print(f'Number of test clips: {len(test_data)}')
 
     # Model
     print('Creating model...')
@@ -103,6 +78,10 @@ def main():
         dim=config.dim, depth=config.depth, heads=config.heads, dim_head=config.dim_head,  # transformer
         mlp_dim=config.mlp_dim, num_classes=config.num_classes # output
     ).to(device)
+
+    # print(
+    #     f"Total number of paramerters in networks is {sum(x.numel() for x in model.parameters())}  "
+    # )
 
     print('Creating optimizer...')
     criterion = nn.CrossEntropyLoss()

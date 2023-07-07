@@ -3,11 +3,12 @@ learning_rate = 0.01
 momentum = 0.9
 weight_decay = 1e-4
 batch_size = 16
-num_epochs = 50
+num_epochs = 30
 print_interval=100
+workers=4
 
 # Data paths
-data_path = './data/raw/point_clouds/'
+data_path = './data/raw/pcd/'
 
 # Model paths
 save_model_path = './checkpoints/'
@@ -30,5 +31,3 @@ dim_head=128
 ## output
 mlp_dim=2048
 num_classes=20 # 20 classes in MSRAction3D
-
-
