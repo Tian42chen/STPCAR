@@ -88,3 +88,4 @@ Accuracy of the network on the 77 test clips: 0.00%
 Epoch [30/30], Step [10/27], Loss: 1.0459, Accuracy: 66.25%
 Epoch [30/30], Step [20/27], Loss: 1.1940, Accuracy: 58.12%
 Accuracy of the network on the 77 test clips: 1.30%
+# 小数据

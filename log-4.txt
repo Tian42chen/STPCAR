@@ -1,0 +1,241 @@
+Epoch [1/30], Step [100/742], Loss: 3.0050, Accuracy: 6.25%
+Epoch [1/30], Step [200/742], Loss: 2.9835, Accuracy: 6.19%
+Epoch [1/30], Step [300/742], Loss: 2.9844, Accuracy: 6.31%
+Epoch [1/30], Step [400/742], Loss: 3.0031, Accuracy: 6.50%
+Epoch [1/30], Step [500/742], Loss: 2.9908, Accuracy: 6.12%
+Epoch [1/30], Step [600/742], Loss: 2.9909, Accuracy: 6.38%
+Epoch [1/30], Step [700/742], Loss: 2.9865, Accuracy: 6.31%
+Accuracy of the network on the 2422 test clips: 5.66%
+Epoch [2/30], Step [100/742], Loss: 2.9748, Accuracy: 7.50%
+Epoch [2/30], Step [200/742], Loss: 2.9527, Accuracy: 7.56%
+Epoch [2/30], Step [300/742], Loss: 2.9421, Accuracy: 8.25%
+Epoch [2/30], Step [400/742], Loss: 2.8931, Accuracy: 9.50%
+Epoch [2/30], Step [500/742], Loss: 2.8381, Accuracy: 10.69%
+Epoch [2/30], Step [600/742], Loss: 2.5416, Accuracy: 21.19%
+Epoch [2/30], Step [700/742], Loss: 2.3251, Accuracy: 25.88%
+Accuracy of the network on the 2422 test clips: 35.55%
+Epoch [3/30], Step [100/742], Loss: 1.9100, Accuracy: 39.19%
+Epoch [3/30], Step [200/742], Loss: 1.7629, Accuracy: 42.12%
+Epoch [3/30], Step [300/742], Loss: 1.4997, Accuracy: 49.62%
+Epoch [3/30], Step [400/742], Loss: 1.3634, Accuracy: 54.19%
+Epoch [3/30], Step [500/742], Loss: 1.3231, Accuracy: 55.31%
+Epoch [3/30], Step [600/742], Loss: 1.1600, Accuracy: 61.12%
+Epoch [3/30], Step [700/742], Loss: 1.1088, Accuracy: 62.94%
+Accuracy of the network on the 2422 test clips: 57.06%
+Epoch [4/30], Step [100/742], Loss: 0.9502, Accuracy: 69.56%
+Epoch [4/30], Step [200/742], Loss: 1.0618, Accuracy: 65.38%
+Epoch [4/30], Step [300/742], Loss: 0.8921, Accuracy: 69.62%
+Epoch [4/30], Step [400/742], Loss: 0.8685, Accuracy: 70.69%
+Epoch [4/30], Step [500/742], Loss: 0.8069, Accuracy: 72.81%
+Epoch [4/30], Step [600/742], Loss: 0.7939, Accuracy: 71.75%
+Epoch [4/30], Step [700/742], Loss: 0.7616, Accuracy: 74.38%
+Accuracy of the network on the 2422 test clips: 69.61%
+Epoch [5/30], Step [100/742], Loss: 0.7471, Accuracy: 73.44%
+Epoch [5/30], Step [200/742], Loss: 0.6678, Accuracy: 76.38%
+Epoch [5/30], Step [300/742], Loss: 0.6166, Accuracy: 77.69%
+Epoch [5/30], Step [400/742], Loss: 0.6717, Accuracy: 75.50%
+Epoch [5/30], Step [500/742], Loss: 0.6007, Accuracy: 79.12%
+Epoch [5/30], Step [600/742], Loss: 0.6471, Accuracy: 78.44%
+Epoch [5/30], Step [700/742], Loss: 0.5503, Accuracy: 80.62%
+Accuracy of the network on the 2422 test clips: 76.14%
+Epoch [6/30], Step [100/742], Loss: 0.4844, Accuracy: 83.81%
+Epoch [6/30], Step [200/742], Loss: 0.5472, Accuracy: 80.81%
+Epoch [6/30], Step [300/742], Loss: 0.5766, Accuracy: 80.06%
+Epoch [6/30], Step [400/742], Loss: 0.5672, Accuracy: 80.12%
+Epoch [6/30], Step [500/742], Loss: 0.5188, Accuracy: 82.06%
+Epoch [6/30], Step [600/742], Loss: 0.4980, Accuracy: 82.31%
+Epoch [6/30], Step [700/742], Loss: 0.5144, Accuracy: 82.00%
+Accuracy of the network on the 2422 test clips: 77.00%
+Epoch [7/30], Step [100/742], Loss: 0.4318, Accuracy: 84.94%
+Epoch [7/30], Step [200/742], Loss: 0.4411, Accuracy: 83.81%
+Epoch [7/30], Step [300/742], Loss: 0.4300, Accuracy: 85.38%
+Epoch [7/30], Step [400/742], Loss: 0.3885, Accuracy: 87.44%
+Epoch [7/30], Step [500/742], Loss: 0.4161, Accuracy: 85.50%
+Epoch [7/30], Step [600/742], Loss: 0.4380, Accuracy: 85.12%
+Epoch [7/30], Step [700/742], Loss: 0.3877, Accuracy: 86.75%
+Accuracy of the network on the 2422 test clips: 63.09%
+Epoch [8/30], Step [100/742], Loss: 0.4075, Accuracy: 86.81%
+Epoch [8/30], Step [200/742], Loss: 0.3599, Accuracy: 88.06%
+Epoch [8/30], Step [300/742], Loss: 0.4438, Accuracy: 85.19%
+Epoch [8/30], Step [400/742], Loss: 0.3488, Accuracy: 88.31%
+Epoch [8/30], Step [500/742], Loss: 0.4225, Accuracy: 85.12%
+Epoch [8/30], Step [600/742], Loss: 0.3542, Accuracy: 87.69%
+Epoch [8/30], Step [700/742], Loss: 0.3251, Accuracy: 89.25%
+Accuracy of the network on the 2422 test clips: 77.04%
+Epoch [9/30], Step [100/742], Loss: 0.3060, Accuracy: 89.75%
+Epoch [9/30], Step [200/742], Loss: 0.3176, Accuracy: 89.25%
+Epoch [9/30], Step [300/742], Loss: 0.3497, Accuracy: 87.75%
+Epoch [9/30], Step [400/742], Loss: 0.3899, Accuracy: 86.50%
+Epoch [9/30], Step [500/742], Loss: 0.3492, Accuracy: 87.69%
+Epoch [9/30], Step [600/742], Loss: 0.3169, Accuracy: 89.25%
+Epoch [9/30], Step [700/742], Loss: 0.3133, Accuracy: 90.44%
+Accuracy of the network on the 2422 test clips: 74.11%
+Epoch [10/30], Step [100/742], Loss: 0.3401, Accuracy: 88.12%
+Epoch [10/30], Step [200/742], Loss: 0.3566, Accuracy: 87.75%
+Epoch [10/30], Step [300/742], Loss: 0.3101, Accuracy: 89.38%
+Epoch [10/30], Step [400/742], Loss: 0.3498, Accuracy: 88.50%
+Epoch [10/30], Step [500/742], Loss: 0.3469, Accuracy: 88.31%
+Epoch [10/30], Step [600/742], Loss: 0.2866, Accuracy: 90.81%
+Epoch [10/30], Step [700/742], Loss: 0.2941, Accuracy: 89.56%
+Accuracy of the network on the 2422 test clips: 73.58%
+Epoch [11/30], Step [100/742], Loss: 0.2739, Accuracy: 91.06%
+Epoch [11/30], Step [200/742], Loss: 0.3115, Accuracy: 89.69%
+Epoch [11/30], Step [300/742], Loss: 0.2857, Accuracy: 91.00%
+Epoch [11/30], Step [400/742], Loss: 0.2705, Accuracy: 90.44%
+Epoch [11/30], Step [500/742], Loss: 0.2820, Accuracy: 90.38%
+Epoch [11/30], Step [600/742], Loss: 0.2977, Accuracy: 90.69%
+Epoch [11/30], Step [700/742], Loss: 0.2528, Accuracy: 91.06%
+Accuracy of the network on the 2422 test clips: 75.31%
+Epoch [12/30], Step [100/742], Loss: 0.1919, Accuracy: 94.00%
+Epoch [12/30], Step [200/742], Loss: 0.2299, Accuracy: 92.88%
+Epoch [12/30], Step [300/742], Loss: 0.1689, Accuracy: 94.44%
+Epoch [12/30], Step [400/742], Loss: 0.2350, Accuracy: 92.94%
+Epoch [12/30], Step [500/742], Loss: 0.2562, Accuracy: 91.75%
+Epoch [12/30], Step [600/742], Loss: 0.1948, Accuracy: 93.00%
+Epoch [12/30], Step [700/742], Loss: 0.2093, Accuracy: 93.44%
+Accuracy of the network on the 2422 test clips: 73.29%
+Epoch [13/30], Step [100/742], Loss: 0.1117, Accuracy: 96.25%
+Epoch [13/30], Step [200/742], Loss: 0.1604, Accuracy: 94.00%
+Epoch [13/30], Step [300/742], Loss: 0.1082, Accuracy: 96.81%
+Epoch [13/30], Step [400/742], Loss: 0.1770, Accuracy: 93.38%
+Epoch [13/30], Step [500/742], Loss: 0.1461, Accuracy: 95.44%
+Epoch [13/30], Step [600/742], Loss: 0.1455, Accuracy: 95.25%
+Epoch [13/30], Step [700/742], Loss: 0.1236, Accuracy: 95.81%
+Accuracy of the network on the 2422 test clips: 77.42%
+Epoch [14/30], Step [100/742], Loss: 0.1258, Accuracy: 95.50%
+Epoch [14/30], Step [200/742], Loss: 0.1252, Accuracy: 96.00%
+Epoch [14/30], Step [300/742], Loss: 0.1769, Accuracy: 94.19%
+Epoch [14/30], Step [400/742], Loss: 0.1367, Accuracy: 95.31%
+Epoch [14/30], Step [500/742], Loss: 0.1576, Accuracy: 94.75%
+Epoch [14/30], Step [600/742], Loss: 0.0863, Accuracy: 97.25%
+Epoch [14/30], Step [700/742], Loss: 0.1006, Accuracy: 96.75%
+Accuracy of the network on the 2422 test clips: 77.13%
+Epoch [15/30], Step [100/742], Loss: 0.0889, Accuracy: 96.81%
+Epoch [15/30], Step [200/742], Loss: 0.1225, Accuracy: 95.75%
+Epoch [15/30], Step [300/742], Loss: 0.1015, Accuracy: 97.19%
+Epoch [15/30], Step [400/742], Loss: 0.0993, Accuracy: 96.62%
+Epoch [15/30], Step [500/742], Loss: 0.1107, Accuracy: 96.50%
+Epoch [15/30], Step [600/742], Loss: 0.0794, Accuracy: 97.38%
+Epoch [15/30], Step [700/742], Loss: 0.0827, Accuracy: 97.12%
+Accuracy of the network on the 2422 test clips: 76.80%
+Epoch [16/30], Step [100/742], Loss: 0.0900, Accuracy: 97.19%
+Epoch [16/30], Step [200/742], Loss: 0.0811, Accuracy: 97.44%
+Epoch [16/30], Step [300/742], Loss: 0.0536, Accuracy: 97.94%
+Epoch [16/30], Step [400/742], Loss: 0.1046, Accuracy: 96.94%
+Epoch [16/30], Step [500/742], Loss: 0.0752, Accuracy: 97.50%
+Epoch [16/30], Step [600/742], Loss: 0.1388, Accuracy: 95.31%
+Epoch [16/30], Step [700/742], Loss: 0.1151, Accuracy: 96.25%
+Accuracy of the network on the 2422 test clips: 78.20%
+Epoch [17/30], Step [100/742], Loss: 0.0863, Accuracy: 97.12%
+Epoch [17/30], Step [200/742], Loss: 0.0725, Accuracy: 97.69%
+Epoch [17/30], Step [300/742], Loss: 0.0537, Accuracy: 98.31%
+Epoch [17/30], Step [400/742], Loss: 0.0515, Accuracy: 97.94%
+Epoch [17/30], Step [500/742], Loss: 0.0505, Accuracy: 98.25%
+Epoch [17/30], Step [600/742], Loss: 0.0493, Accuracy: 98.25%
+Epoch [17/30], Step [700/742], Loss: 0.0667, Accuracy: 98.06%
+Accuracy of the network on the 2422 test clips: 79.07%
+Epoch [18/30], Step [100/742], Loss: 0.0518, Accuracy: 97.88%
+Epoch [18/30], Step [200/742], Loss: 0.0287, Accuracy: 98.94%
+Epoch [18/30], Step [300/742], Loss: 0.0589, Accuracy: 97.88%
+Epoch [18/30], Step [400/742], Loss: 0.0315, Accuracy: 98.94%
+Epoch [18/30], Step [500/742], Loss: 0.0548, Accuracy: 98.19%
+Epoch [18/30], Step [600/742], Loss: 0.0813, Accuracy: 97.31%
+Epoch [18/30], Step [700/742], Loss: 0.0599, Accuracy: 97.75%
+Accuracy of the network on the 2422 test clips: 77.91%
+Epoch [19/30], Step [100/742], Loss: 0.0515, Accuracy: 98.69%
+Epoch [19/30], Step [200/742], Loss: 0.0645, Accuracy: 97.69%
+Epoch [19/30], Step [300/742], Loss: 0.0525, Accuracy: 98.44%
+Epoch [19/30], Step [400/742], Loss: 0.0569, Accuracy: 97.94%
+Epoch [19/30], Step [500/742], Loss: 0.0489, Accuracy: 98.38%
+Epoch [19/30], Step [600/742], Loss: 0.0523, Accuracy: 98.31%
+Epoch [19/30], Step [700/742], Loss: 0.0335, Accuracy: 98.94%
+Accuracy of the network on the 2422 test clips: 81.01%
+Epoch [20/30], Step [100/742], Loss: 0.0486, Accuracy: 98.62%
+Epoch [20/30], Step [200/742], Loss: 0.0476, Accuracy: 98.50%
+Epoch [20/30], Step [300/742], Loss: 0.0292, Accuracy: 99.06%
+Epoch [20/30], Step [400/742], Loss: 0.0334, Accuracy: 98.50%
+Epoch [20/30], Step [500/742], Loss: 0.0334, Accuracy: 98.75%
+Epoch [20/30], Step [600/742], Loss: 0.0614, Accuracy: 98.25%
+Epoch [20/30], Step [700/742], Loss: 0.0221, Accuracy: 99.25%
+Accuracy of the network on the 2422 test clips: 80.35%
+Epoch [21/30], Step [100/742], Loss: 0.0174, Accuracy: 99.56%
+Epoch [21/30], Step [200/742], Loss: 0.0117, Accuracy: 99.81%
+Epoch [21/30], Step [300/742], Loss: 0.0050, Accuracy: 99.88%
+Epoch [21/30], Step [400/742], Loss: 0.0055, Accuracy: 99.88%
+Epoch [21/30], Step [500/742], Loss: 0.0052, Accuracy: 99.81%
+Epoch [21/30], Step [600/742], Loss: 0.0056, Accuracy: 99.81%
+Epoch [21/30], Step [700/742], Loss: 0.0036, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.02%
+Epoch [22/30], Step [100/742], Loss: 0.0041, Accuracy: 99.88%
+Epoch [22/30], Step [200/742], Loss: 0.0055, Accuracy: 99.75%
+Epoch [22/30], Step [300/742], Loss: 0.0031, Accuracy: 100.00%
+Epoch [22/30], Step [400/742], Loss: 0.0070, Accuracy: 99.81%
+Epoch [22/30], Step [500/742], Loss: 0.0045, Accuracy: 99.88%
+Epoch [22/30], Step [600/742], Loss: 0.0038, Accuracy: 99.94%
+Epoch [22/30], Step [700/742], Loss: 0.0022, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 83.53%
+Epoch [23/30], Step [100/742], Loss: 0.0022, Accuracy: 100.00%
+Epoch [23/30], Step [200/742], Loss: 0.0054, Accuracy: 99.88%
+Epoch [23/30], Step [300/742], Loss: 0.0025, Accuracy: 100.00%
+Epoch [23/30], Step [400/742], Loss: 0.0052, Accuracy: 99.81%
+Epoch [23/30], Step [500/742], Loss: 0.0035, Accuracy: 99.94%
+Epoch [23/30], Step [600/742], Loss: 0.0040, Accuracy: 99.94%
+Epoch [23/30], Step [700/742], Loss: 0.0026, Accuracy: 99.94%
+Accuracy of the network on the 2422 test clips: 84.64%
+Epoch [24/30], Step [100/742], Loss: 0.0021, Accuracy: 99.94%
+Epoch [24/30], Step [200/742], Loss: 0.0033, Accuracy: 99.81%
+Epoch [24/30], Step [300/742], Loss: 0.0018, Accuracy: 100.00%
+Epoch [24/30], Step [400/742], Loss: 0.0038, Accuracy: 100.00%
+Epoch [24/30], Step [500/742], Loss: 0.0027, Accuracy: 100.00%
+Epoch [24/30], Step [600/742], Loss: 0.0024, Accuracy: 99.94%
+Epoch [24/30], Step [700/742], Loss: 0.0032, Accuracy: 99.94%
+Accuracy of the network on the 2422 test clips: 84.48%
+Epoch [25/30], Step [100/742], Loss: 0.0029, Accuracy: 99.94%
+Epoch [25/30], Step [200/742], Loss: 0.0038, Accuracy: 99.94%
+Epoch [25/30], Step [300/742], Loss: 0.0027, Accuracy: 99.94%
+Epoch [25/30], Step [400/742], Loss: 0.0026, Accuracy: 99.94%
+Epoch [25/30], Step [500/742], Loss: 0.0022, Accuracy: 100.00%
+Epoch [25/30], Step [600/742], Loss: 0.0013, Accuracy: 100.00%
+Epoch [25/30], Step [700/742], Loss: 0.0026, Accuracy: 99.94%
+Accuracy of the network on the 2422 test clips: 84.85%
+Epoch [26/30], Step [100/742], Loss: 0.0022, Accuracy: 99.94%
+Epoch [26/30], Step [200/742], Loss: 0.0043, Accuracy: 99.88%
+Epoch [26/30], Step [300/742], Loss: 0.0014, Accuracy: 100.00%
+Epoch [26/30], Step [400/742], Loss: 0.0014, Accuracy: 100.00%
+Epoch [26/30], Step [500/742], Loss: 0.0021, Accuracy: 100.00%
+Epoch [26/30], Step [600/742], Loss: 0.0052, Accuracy: 99.81%
+Epoch [26/30], Step [700/742], Loss: 0.0038, Accuracy: 99.88%
+Accuracy of the network on the 2422 test clips: 84.06%
+Epoch [27/30], Step [100/742], Loss: 0.0019, Accuracy: 100.00%
+Epoch [27/30], Step [200/742], Loss: 0.0023, Accuracy: 99.94%
+Epoch [27/30], Step [300/742], Loss: 0.0022, Accuracy: 100.00%
+Epoch [27/30], Step [400/742], Loss: 0.0038, Accuracy: 99.88%
+Epoch [27/30], Step [500/742], Loss: 0.0021, Accuracy: 100.00%
+Epoch [27/30], Step [600/742], Loss: 0.0037, Accuracy: 99.94%
+Epoch [27/30], Step [700/742], Loss: 0.0031, Accuracy: 99.94%
+Accuracy of the network on the 2422 test clips: 84.23%
+Epoch [28/30], Step [100/742], Loss: 0.0012, Accuracy: 100.00%
+Epoch [28/30], Step [200/742], Loss: 0.0012, Accuracy: 100.00%
+Epoch [28/30], Step [300/742], Loss: 0.0019, Accuracy: 99.94%
+Epoch [28/30], Step [400/742], Loss: 0.0032, Accuracy: 99.94%
+Epoch [28/30], Step [500/742], Loss: 0.0058, Accuracy: 99.88%
+Epoch [28/30], Step [600/742], Loss: 0.0039, Accuracy: 99.81%
+Epoch [28/30], Step [700/742], Loss: 0.0021, Accuracy: 99.94%
+Accuracy of the network on the 2422 test clips: 84.35%
+Epoch [29/30], Step [100/742], Loss: 0.0015, Accuracy: 100.00%
+Epoch [29/30], Step [200/742], Loss: 0.0016, Accuracy: 100.00%
+Epoch [29/30], Step [300/742], Loss: 0.0029, Accuracy: 99.88%
+Epoch [29/30], Step [400/742], Loss: 0.0030, Accuracy: 99.88%
+Epoch [29/30], Step [500/742], Loss: 0.0036, Accuracy: 99.88%
+Epoch [29/30], Step [600/742], Loss: 0.0018, Accuracy: 99.94%
+Epoch [29/30], Step [700/742], Loss: 0.0029, Accuracy: 99.94%
+Accuracy of the network on the 2422 test clips: 84.72%
+Epoch [30/30], Step [100/742], Loss: 0.0026, Accuracy: 99.94%
+Epoch [30/30], Step [200/742], Loss: 0.0020, Accuracy: 100.00%
+Epoch [30/30], Step [300/742], Loss: 0.0018, Accuracy: 100.00%
+Epoch [30/30], Step [400/742], Loss: 0.0019, Accuracy: 99.94%
+Epoch [30/30], Step [500/742], Loss: 0.0031, Accuracy: 100.00%
+Epoch [30/30], Step [600/742], Loss: 0.0024, Accuracy: 99.88%
+Epoch [30/30], Step [700/742], Loss: 0.0018, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 85.22%
+# Transformer 有序的输入
