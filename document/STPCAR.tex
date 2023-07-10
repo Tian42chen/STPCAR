@@ -1,0 +1,71 @@
+% CVPR 2023 Paper Template
+% based on the CVPR template provided by Ming-Ming Cheng (https://github.com/MCG-NKU/CVPR_Template)
+% modified and extended by Stefan Roth (stefan.roth@NOSPAMtu-darmstadt.de)
+
+\documentclass{source/Paper}
+
+% Support for easy cross-referencing
+
+%%%%%%%%% PAPER ID  - PLEASE UPDATE
+\def\cvprPaperID{*****} % *** Enter the CVPR Paper ID here
+\def\confName{CVPR}
+\def\confYear{2023}
+
+
+\begin{document}
+
+%%%%%%%%% TITLE - PLEASE UPDATE
+\title{\LaTeX\ Author Guidelines for \confName~Proceedings}
+
+\author{First Author\\
+Institution1\\
+Institution1 address\\
+{\tt\small firstauthor@i1.org}
+% For a paper whose authors are all at the same institution,
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'',
+% just like the second author.
+% To save space, use either the email address or home page, not both
+\and
+Second Author\\
+Institution2\\
+First line of institution2 address\\
+{\tt\small secondauthor@i2.org}
+}
+\maketitle
+
+%%%%%%%%% ABSTRACT
+\begin{abstract}
+    The ABSTRACT is to be in fully justified italicized text, at the top of the left-hand column, below the author and affiliation information.
+    Use the word ``Abstract'' as the title, in 12-point Times, boldface type, centered relative to the column, initially capitalized.
+    The abstract is to be in 10-point, single-spaced type.
+    Leave two blank lines after the Abstract, then begin the main text.
+    Look at previous CVPR abstracts to get a feel for style and length.
+\end{abstract}
+
+% \begin{enumerate}
+%   \item 简介
+%   \item 最近工作 (列举相关即可)
+%   \item 方法
+%   \item 实验 (可视化)
+%   \subitem 消融实验
+%   \item 结论
+% \end{enumerate}
+% 甚至可以在首页右上角加一张图片
+
+%%%%%%%%% BODY TEXT
+\input{content/Introduction.tex}
+\input{content/Related Work.tex}
+\input{content/Method.tex}
+\input{content/Experiments.tex}
+\input{content/Conclusion.tex}
+
+\cite{Authors14}
+
+%%%%%%%%% REFERENCES
+{\small
+\bibliographystyle{reference/ieee_fullname}
+\bibliography{reference/egbib}
+}
+
+\end{document}
