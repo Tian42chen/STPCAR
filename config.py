@@ -15,7 +15,7 @@ lr_gamma=0.1
 lr_warmup_epochs=10
 
 # Data paths
-data_path = './data/raw/pcd/'
+data_path = './data/raw/testpcd/'
 
 # Model paths
 save_model_path = './checkpoints/'
@@ -29,7 +29,7 @@ spatial_stride=32
 temporal_kernel_size=3
 temporal_stride=2
 ## embedding: relu
-emb_relu=False
+emb_complex=True
 # Transformer
 dim=1024
 depth=5
