@@ -1,3 +1,4 @@
+Transformer 有序的输入
 Epoch [1/30], Step [100/742], Loss: 3.0050, Accuracy: 6.25%
 Epoch [1/30], Step [200/742], Loss: 2.9835, Accuracy: 6.19%
 Epoch [1/30], Step [300/742], Loss: 2.9844, Accuracy: 6.31%
@@ -238,4 +239,3 @@ Epoch [30/30], Step [500/742], Loss: 0.0031, Accuracy: 100.00%
 Epoch [30/30], Step [600/742], Loss: 0.0024, Accuracy: 99.88%
 Epoch [30/30], Step [700/742], Loss: 0.0018, Accuracy: 100.00%
 Accuracy of the network on the 2422 test clips: 85.22%
-# Transformer 有序的输入

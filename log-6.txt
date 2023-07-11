@@ -1,0 +1,201 @@
+增加参数量, Transformer的embedding修改
+Epoch [1/50], Step [100/371], Loss: 2.9960, Accuracy: 5.28%
+Epoch [1/50], Step [200/371], Loss: 2.9967, Accuracy: 6.34%
+Epoch [1/50], Step [300/371], Loss: 2.9916, Accuracy: 6.72%
+Accuracy of the network on the 2422 test clips: 7.72%
+Epoch [2/50], Step [100/371], Loss: 2.9858, Accuracy: 6.59%
+Epoch [2/50], Step [200/371], Loss: 2.9728, Accuracy: 7.84%
+Epoch [2/50], Step [300/371], Loss: 2.9469, Accuracy: 8.38%
+Accuracy of the network on the 2422 test clips: 11.93%
+Epoch [3/50], Step [100/371], Loss: 2.7434, Accuracy: 14.91%
+Epoch [3/50], Step [200/371], Loss: 2.3037, Accuracy: 26.47%
+Epoch [3/50], Step [300/371], Loss: 1.7564, Accuracy: 42.38%
+Accuracy of the network on the 2422 test clips: 57.31%
+Epoch [4/50], Step [100/371], Loss: 1.1206, Accuracy: 63.31%
+Epoch [4/50], Step [200/371], Loss: 0.9141, Accuracy: 70.50%
+Epoch [4/50], Step [300/371], Loss: 0.7395, Accuracy: 75.97%
+Accuracy of the network on the 2422 test clips: 71.72%
+Epoch [5/50], Step [100/371], Loss: 0.5886, Accuracy: 80.50%
+Epoch [5/50], Step [200/371], Loss: 0.5473, Accuracy: 80.94%
+Epoch [5/50], Step [300/371], Loss: 0.4731, Accuracy: 84.06%
+Accuracy of the network on the 2422 test clips: 71.47%
+Epoch [6/50], Step [100/371], Loss: 0.4438, Accuracy: 84.88%
+Epoch [6/50], Step [200/371], Loss: 0.3984, Accuracy: 87.03%
+Epoch [6/50], Step [300/371], Loss: 0.3323, Accuracy: 88.88%
+Accuracy of the network on the 2422 test clips: 77.99%
+Epoch [7/50], Step [100/371], Loss: 0.3303, Accuracy: 88.47%
+Epoch [7/50], Step [200/371], Loss: 0.3453, Accuracy: 88.22%
+Epoch [7/50], Step [300/371], Loss: 0.2842, Accuracy: 90.44%
+Accuracy of the network on the 2422 test clips: 79.36%
+Epoch [8/50], Step [100/371], Loss: 0.2698, Accuracy: 90.88%
+Epoch [8/50], Step [200/371], Loss: 0.2697, Accuracy: 91.00%
+Epoch [8/50], Step [300/371], Loss: 0.2493, Accuracy: 91.91%
+Accuracy of the network on the 2422 test clips: 76.59%
+Epoch [9/50], Step [100/371], Loss: 0.1986, Accuracy: 93.19%
+Epoch [9/50], Step [200/371], Loss: 0.1787, Accuracy: 93.94%
+Epoch [9/50], Step [300/371], Loss: 0.1973, Accuracy: 93.41%
+Accuracy of the network on the 2422 test clips: 71.14%
+Epoch [10/50], Step [100/371], Loss: 0.1513, Accuracy: 95.12%
+Epoch [10/50], Step [200/371], Loss: 0.1675, Accuracy: 94.34%
+Epoch [10/50], Step [300/371], Loss: 0.1996, Accuracy: 93.34%
+Accuracy of the network on the 2422 test clips: 76.59%
+Epoch [11/50], Step [100/371], Loss: 0.1365, Accuracy: 94.94%
+Epoch [11/50], Step [200/371], Loss: 0.1214, Accuracy: 96.03%
+Epoch [11/50], Step [300/371], Loss: 0.1098, Accuracy: 96.59%
+Accuracy of the network on the 2422 test clips: 76.42%
+Epoch [12/50], Step [100/371], Loss: 0.1525, Accuracy: 94.62%
+Epoch [12/50], Step [200/371], Loss: 0.1460, Accuracy: 95.12%
+Epoch [12/50], Step [300/371], Loss: 0.1169, Accuracy: 96.03%
+Accuracy of the network on the 2422 test clips: 79.52%
+Epoch [13/50], Step [100/371], Loss: 0.1021, Accuracy: 96.56%
+Epoch [13/50], Step [200/371], Loss: 0.0808, Accuracy: 97.56%
+Epoch [13/50], Step [300/371], Loss: 0.0714, Accuracy: 97.56%
+Accuracy of the network on the 2422 test clips: 82.04%
+Epoch [14/50], Step [100/371], Loss: 0.0572, Accuracy: 98.12%
+Epoch [14/50], Step [200/371], Loss: 0.0308, Accuracy: 99.16%
+Epoch [14/50], Step [300/371], Loss: 0.0288, Accuracy: 98.97%
+Accuracy of the network on the 2422 test clips: 79.64%
+Epoch [15/50], Step [100/371], Loss: 0.0655, Accuracy: 97.59%
+Epoch [15/50], Step [200/371], Loss: 0.0468, Accuracy: 98.41%
+Epoch [15/50], Step [300/371], Loss: 0.0438, Accuracy: 98.47%
+Accuracy of the network on the 2422 test clips: 83.11%
+Epoch [16/50], Step [100/371], Loss: 0.0369, Accuracy: 98.66%
+Epoch [16/50], Step [200/371], Loss: 0.0342, Accuracy: 98.75%
+Epoch [16/50], Step [300/371], Loss: 0.0340, Accuracy: 98.81%
+Accuracy of the network on the 2422 test clips: 85.47%
+Epoch [17/50], Step [100/371], Loss: 0.0187, Accuracy: 99.41%
+Epoch [17/50], Step [200/371], Loss: 0.0195, Accuracy: 99.38%
+Epoch [17/50], Step [300/371], Loss: 0.0266, Accuracy: 99.12%
+Accuracy of the network on the 2422 test clips: 84.31%
+Epoch [18/50], Step [100/371], Loss: 0.0227, Accuracy: 99.41%
+Epoch [18/50], Step [200/371], Loss: 0.0103, Accuracy: 99.75%
+Epoch [18/50], Step [300/371], Loss: 0.0248, Accuracy: 99.19%
+Accuracy of the network on the 2422 test clips: 83.77%
+Epoch [19/50], Step [100/371], Loss: 0.0106, Accuracy: 99.72%
+Epoch [19/50], Step [200/371], Loss: 0.0175, Accuracy: 99.56%
+Epoch [19/50], Step [300/371], Loss: 0.0097, Accuracy: 99.78%
+Accuracy of the network on the 2422 test clips: 79.69%
+Epoch [20/50], Step [100/371], Loss: 0.0184, Accuracy: 99.44%
+Epoch [20/50], Step [200/371], Loss: 0.0129, Accuracy: 99.75%
+Epoch [20/50], Step [300/371], Loss: 0.0068, Accuracy: 99.88%
+Accuracy of the network on the 2422 test clips: 79.44%
+Epoch [21/50], Step [100/371], Loss: 0.0128, Accuracy: 99.62%
+Epoch [21/50], Step [200/371], Loss: 0.0052, Accuracy: 99.91%
+Epoch [21/50], Step [300/371], Loss: 0.0024, Accuracy: 99.97%
+Accuracy of the network on the 2422 test clips: 84.52%
+Epoch [22/50], Step [100/371], Loss: 0.0018, Accuracy: 100.00%
+Epoch [22/50], Step [200/371], Loss: 0.0023, Accuracy: 100.00%
+Epoch [22/50], Step [300/371], Loss: 0.0021, Accuracy: 99.94%
+Accuracy of the network on the 2422 test clips: 84.31%
+Epoch [23/50], Step [100/371], Loss: 0.0018, Accuracy: 99.97%
+Epoch [23/50], Step [200/371], Loss: 0.0021, Accuracy: 100.00%
+Epoch [23/50], Step [300/371], Loss: 0.0014, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 85.14%
+Epoch [24/50], Step [100/371], Loss: 0.0016, Accuracy: 100.00%
+Epoch [24/50], Step [200/371], Loss: 0.0017, Accuracy: 100.00%
+Epoch [24/50], Step [300/371], Loss: 0.0018, Accuracy: 99.97%
+Accuracy of the network on the 2422 test clips: 85.05%
+Epoch [25/50], Step [100/371], Loss: 0.0010, Accuracy: 99.97%
+Epoch [25/50], Step [200/371], Loss: 0.0014, Accuracy: 100.00%
+Epoch [25/50], Step [300/371], Loss: 0.0015, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.89%
+Epoch [26/50], Step [100/371], Loss: 0.0011, Accuracy: 100.00%
+Epoch [26/50], Step [200/371], Loss: 0.0012, Accuracy: 100.00%
+Epoch [26/50], Step [300/371], Loss: 0.0014, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.81%
+Epoch [27/50], Step [100/371], Loss: 0.0011, Accuracy: 100.00%
+Epoch [27/50], Step [200/371], Loss: 0.0009, Accuracy: 100.00%
+Epoch [27/50], Step [300/371], Loss: 0.0012, Accuracy: 99.97%
+Accuracy of the network on the 2422 test clips: 85.38%
+Epoch [28/50], Step [100/371], Loss: 0.0008, Accuracy: 100.00%
+Epoch [28/50], Step [200/371], Loss: 0.0011, Accuracy: 100.00%
+Epoch [28/50], Step [300/371], Loss: 0.0018, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 85.05%
+Epoch [29/50], Step [100/371], Loss: 0.0011, Accuracy: 100.00%
+Epoch [29/50], Step [200/371], Loss: 0.0011, Accuracy: 100.00%
+Epoch [29/50], Step [300/371], Loss: 0.0011, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.81%
+Epoch [30/50], Step [100/371], Loss: 0.0011, Accuracy: 100.00%
+Epoch [30/50], Step [200/371], Loss: 0.0017, Accuracy: 99.94%
+Epoch [30/50], Step [300/371], Loss: 0.0008, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.97%
+Epoch [31/50], Step [100/371], Loss: 0.0011, Accuracy: 99.97%
+Epoch [31/50], Step [200/371], Loss: 0.0010, Accuracy: 100.00%
+Epoch [31/50], Step [300/371], Loss: 0.0010, Accuracy: 99.97%
+Accuracy of the network on the 2422 test clips: 84.76%
+Epoch [32/50], Step [100/371], Loss: 0.0009, Accuracy: 100.00%
+Epoch [32/50], Step [200/371], Loss: 0.0009, Accuracy: 100.00%
+Epoch [32/50], Step [300/371], Loss: 0.0011, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 85.09%
+Epoch [33/50], Step [100/371], Loss: 0.0009, Accuracy: 100.00%
+Epoch [33/50], Step [200/371], Loss: 0.0007, Accuracy: 100.00%
+Epoch [33/50], Step [300/371], Loss: 0.0009, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 85.05%
+Epoch [34/50], Step [100/371], Loss: 0.0012, Accuracy: 100.00%
+Epoch [34/50], Step [200/371], Loss: 0.0009, Accuracy: 100.00%
+Epoch [34/50], Step [300/371], Loss: 0.0010, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.85%
+Epoch [35/50], Step [100/371], Loss: 0.0010, Accuracy: 99.97%
+Epoch [35/50], Step [200/371], Loss: 0.0008, Accuracy: 100.00%
+Epoch [35/50], Step [300/371], Loss: 0.0010, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.64%
+Epoch [36/50], Step [100/371], Loss: 0.0008, Accuracy: 100.00%
+Epoch [36/50], Step [200/371], Loss: 0.0015, Accuracy: 99.97%
+Epoch [36/50], Step [300/371], Loss: 0.0008, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 85.18%
+Epoch [37/50], Step [100/371], Loss: 0.0008, Accuracy: 100.00%
+Epoch [37/50], Step [200/371], Loss: 0.0009, Accuracy: 100.00%
+Epoch [37/50], Step [300/371], Loss: 0.0012, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.68%
+Epoch [38/50], Step [100/371], Loss: 0.0008, Accuracy: 100.00%
+Epoch [38/50], Step [200/371], Loss: 0.0009, Accuracy: 100.00%
+Epoch [38/50], Step [300/371], Loss: 0.0009, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 85.09%
+Epoch [39/50], Step [100/371], Loss: 0.0008, Accuracy: 100.00%
+Epoch [39/50], Step [200/371], Loss: 0.0011, Accuracy: 100.00%
+Epoch [39/50], Step [300/371], Loss: 0.0013, Accuracy: 99.97%
+Accuracy of the network on the 2422 test clips: 84.68%
+Epoch [40/50], Step [100/371], Loss: 0.0008, Accuracy: 100.00%
+Epoch [40/50], Step [200/371], Loss: 0.0009, Accuracy: 100.00%
+Epoch [40/50], Step [300/371], Loss: 0.0010, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 85.09%
+Epoch [41/50], Step [100/371], Loss: 0.0008, Accuracy: 100.00%
+Epoch [41/50], Step [200/371], Loss: 0.0011, Accuracy: 100.00%
+Epoch [41/50], Step [300/371], Loss: 0.0009, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.72%
+Epoch [42/50], Step [100/371], Loss: 0.0008, Accuracy: 100.00%
+Epoch [42/50], Step [200/371], Loss: 0.0009, Accuracy: 100.00%
+Epoch [42/50], Step [300/371], Loss: 0.0008, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 85.01%
+Epoch [43/50], Step [100/371], Loss: 0.0012, Accuracy: 99.97%
+Epoch [43/50], Step [200/371], Loss: 0.0008, Accuracy: 100.00%
+Epoch [43/50], Step [300/371], Loss: 0.0012, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.72%
+Epoch [44/50], Step [100/371], Loss: 0.0009, Accuracy: 100.00%
+Epoch [44/50], Step [200/371], Loss: 0.0007, Accuracy: 100.00%
+Epoch [44/50], Step [300/371], Loss: 0.0013, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.81%
+Epoch [45/50], Step [100/371], Loss: 0.0010, Accuracy: 100.00%
+Epoch [45/50], Step [200/371], Loss: 0.0008, Accuracy: 100.00%
+Epoch [45/50], Step [300/371], Loss: 0.0008, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.97%
+Epoch [46/50], Step [100/371], Loss: 0.0011, Accuracy: 99.97%
+Epoch [46/50], Step [200/371], Loss: 0.0010, Accuracy: 100.00%
+Epoch [46/50], Step [300/371], Loss: 0.0012, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.93%
+Epoch [47/50], Step [100/371], Loss: 0.0012, Accuracy: 100.00%
+Epoch [47/50], Step [200/371], Loss: 0.0009, Accuracy: 100.00%
+Epoch [47/50], Step [300/371], Loss: 0.0008, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.85%
+Epoch [48/50], Step [100/371], Loss: 0.0008, Accuracy: 100.00%
+Epoch [48/50], Step [200/371], Loss: 0.0007, Accuracy: 100.00%
+Epoch [48/50], Step [300/371], Loss: 0.0008, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 85.26%
+Epoch [49/50], Step [100/371], Loss: 0.0008, Accuracy: 100.00%
+Epoch [49/50], Step [200/371], Loss: 0.0009, Accuracy: 100.00%
+Epoch [49/50], Step [300/371], Loss: 0.0013, Accuracy: 99.97%
+Accuracy of the network on the 2422 test clips: 84.56%
+Epoch [50/50], Step [100/371], Loss: 0.0013, Accuracy: 99.97%
+Epoch [50/50], Step [200/371], Loss: 0.0008, Accuracy: 100.00%
+Epoch [50/50], Step [300/371], Loss: 0.0007, Accuracy: 100.00%
+Accuracy of the network on the 2422 test clips: 84.85%

@@ -1,3 +1,4 @@
+小数据
 Epoch [1/30], Step [10/27], Loss: 2.9819, Accuracy: 5.62%
 Epoch [1/30], Step [20/27], Loss: 2.4775, Accuracy: 21.25%
 Accuracy of the network on the 77 test clips: 28.57%
@@ -88,4 +89,3 @@ Accuracy of the network on the 77 test clips: 0.00%
 Epoch [30/30], Step [10/27], Loss: 1.0459, Accuracy: 66.25%
 Epoch [30/30], Step [20/27], Loss: 1.1940, Accuracy: 58.12%
 Accuracy of the network on the 77 test clips: 1.30%
-# 小数据

@@ -1,3 +1,4 @@
+加了学习率的衰减
 Epoch [1/50], Step [100/742], Loss: 3.0024, Accuracy: 5.31%
 Epoch [1/50], Step [200/742], Loss: 2.9852, Accuracy: 5.31%
 Epoch [1/50], Step [300/742], Loss: 2.9931, Accuracy: 7.88%
