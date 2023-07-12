@@ -92,7 +92,7 @@ def save_all_pkl_as_pcd(path, topath):
     for leftpath in leftlist:
         save_pkls_as_pcd(path,'refinehandpose_left',leftpath,topath)      
     for rightpath in rightlist:
-        save_pkls_as_pcd(path,'refinehandpose_right',leftpath,topath) 
+        save_pkls_as_pcd(path,'refinehandpose_right',rightpath,topath) 
     logging.info("Finished processing all pkl files")
 
 def load_pcd(path, name):
@@ -101,8 +101,7 @@ def load_pcd(path, name):
     Parameters
     ----------
     path : location of the point cloud
-    name : name of the file
-    Returns
+    name : name of the fil
     -------
     pcd : point cloud
     """
@@ -112,4 +111,5 @@ def load_pcd(path, name):
 if __name__ == "__main__":
     raw_data_path = './handpose/'
     pcd_data_path = './handposePcd/'
-    save_all_pkl_as_pcd(raw_data_path, pcd_data_path)
+    save_all_pkl_as_pcd(raw_data_path, pcd_data_path)e
+    Returns
