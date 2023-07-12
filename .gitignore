@@ -5,7 +5,11 @@ data/raw/
 data/train/
 data/test/
 checkpoints*/
+manopth/
+handpose/
+handposepcd/
 STPCAR.pdf
+Presentation.pdf
 *.ipynb
 
 ### LaTeX ###
