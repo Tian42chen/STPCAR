@@ -1,0 +1,151 @@
+55开测试与训练
+Epoch [1/50], Step [100/206], Loss: 2.9751, Accuracy: 5.84%
+Epoch [1/50], Step [200/206], Loss: 2.9790, Accuracy: 6.38%
+Accuracy of the network on the 7707 test clips: 5.53%
+Epoch [2/50], Step [100/206], Loss: 2.9749, Accuracy: 7.50%
+Epoch [2/50], Step [200/206], Loss: 2.9648, Accuracy: 7.06%
+Accuracy of the network on the 7707 test clips: 8.36%
+Epoch [3/50], Step [100/206], Loss: 2.9525, Accuracy: 8.09%
+Epoch [3/50], Step [200/206], Loss: 2.9204, Accuracy: 9.44%
+Accuracy of the network on the 7707 test clips: 6.22%
+Epoch [4/50], Step [100/206], Loss: 2.7754, Accuracy: 14.69%
+Epoch [4/50], Step [200/206], Loss: 2.3453, Accuracy: 26.34%
+Accuracy of the network on the 7707 test clips: 33.09%
+Epoch [5/50], Step [100/206], Loss: 1.5890, Accuracy: 46.94%
+Epoch [5/50], Step [200/206], Loss: 1.2161, Accuracy: 59.00%
+Accuracy of the network on the 7707 test clips: 49.50%
+Epoch [6/50], Step [100/206], Loss: 0.8395, Accuracy: 71.41%
+Epoch [6/50], Step [200/206], Loss: 0.7053, Accuracy: 76.69%
+Accuracy of the network on the 7707 test clips: 69.21%
+Epoch [7/50], Step [100/206], Loss: 0.5679, Accuracy: 81.03%
+Epoch [7/50], Step [200/206], Loss: 0.5105, Accuracy: 82.22%
+Accuracy of the network on the 7707 test clips: 61.14%
+Epoch [8/50], Step [100/206], Loss: 0.3985, Accuracy: 86.66%
+Epoch [8/50], Step [200/206], Loss: 0.3350, Accuracy: 88.59%
+Accuracy of the network on the 7707 test clips: 68.42%
+Epoch [9/50], Step [100/206], Loss: 0.3066, Accuracy: 89.97%
+Epoch [9/50], Step [200/206], Loss: 0.3271, Accuracy: 89.56%
+Accuracy of the network on the 7707 test clips: 63.09%
+Epoch [10/50], Step [100/206], Loss: 0.2939, Accuracy: 89.91%
+Epoch [10/50], Step [200/206], Loss: 0.2708, Accuracy: 90.22%
+Accuracy of the network on the 7707 test clips: 67.91%
+Epoch [11/50], Step [100/206], Loss: 0.1857, Accuracy: 93.78%
+Epoch [11/50], Step [200/206], Loss: 0.1812, Accuracy: 94.12%
+Accuracy of the network on the 7707 test clips: 71.60%
+Epoch [12/50], Step [100/206], Loss: 0.1338, Accuracy: 95.56%
+Epoch [12/50], Step [200/206], Loss: 0.1900, Accuracy: 93.81%
+Accuracy of the network on the 7707 test clips: 71.17%
+Epoch [13/50], Step [100/206], Loss: 0.1310, Accuracy: 95.59%
+Epoch [13/50], Step [200/206], Loss: 0.1654, Accuracy: 94.66%
+Accuracy of the network on the 7707 test clips: 69.48%
+Epoch [14/50], Step [100/206], Loss: 0.0981, Accuracy: 97.09%
+Epoch [14/50], Step [200/206], Loss: 0.1233, Accuracy: 95.91%
+Accuracy of the network on the 7707 test clips: 71.25%
+Epoch [15/50], Step [100/206], Loss: 0.0875, Accuracy: 97.28%
+Epoch [15/50], Step [200/206], Loss: 0.0740, Accuracy: 97.78%
+Accuracy of the network on the 7707 test clips: 73.74%
+Epoch [16/50], Step [100/206], Loss: 0.0403, Accuracy: 98.81%
+Epoch [16/50], Step [200/206], Loss: 0.0521, Accuracy: 98.09%
+Accuracy of the network on the 7707 test clips: 69.44%
+Epoch [17/50], Step [100/206], Loss: 0.0566, Accuracy: 98.28%
+Epoch [17/50], Step [200/206], Loss: 0.0441, Accuracy: 98.62%
+Accuracy of the network on the 7707 test clips: 71.18%
+Epoch [18/50], Step [100/206], Loss: 0.0428, Accuracy: 98.72%
+Epoch [18/50], Step [200/206], Loss: 0.0271, Accuracy: 99.16%
+Accuracy of the network on the 7707 test clips: 71.49%
+Epoch [19/50], Step [100/206], Loss: 0.0332, Accuracy: 98.84%
+Epoch [19/50], Step [200/206], Loss: 0.0358, Accuracy: 98.62%
+Accuracy of the network on the 7707 test clips: 75.28%
+Epoch [20/50], Step [100/206], Loss: 0.0309, Accuracy: 99.06%
+Epoch [20/50], Step [200/206], Loss: 0.0232, Accuracy: 99.31%
+Accuracy of the network on the 7707 test clips: 74.41%
+Epoch [21/50], Step [100/206], Loss: 0.0072, Accuracy: 99.88%
+Epoch [21/50], Step [200/206], Loss: 0.0032, Accuracy: 99.94%
+Accuracy of the network on the 7707 test clips: 76.39%
+Epoch [22/50], Step [100/206], Loss: 0.0024, Accuracy: 100.00%
+Epoch [22/50], Step [200/206], Loss: 0.0017, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 75.92%
+Epoch [23/50], Step [100/206], Loss: 0.0018, Accuracy: 100.00%
+Epoch [23/50], Step [200/206], Loss: 0.0023, Accuracy: 99.97%
+Accuracy of the network on the 7707 test clips: 76.22%
+Epoch [24/50], Step [100/206], Loss: 0.0017, Accuracy: 99.97%
+Epoch [24/50], Step [200/206], Loss: 0.0016, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 75.66%
+Epoch [25/50], Step [100/206], Loss: 0.0014, Accuracy: 100.00%
+Epoch [25/50], Step [200/206], Loss: 0.0016, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.05%
+Epoch [26/50], Step [100/206], Loss: 0.0017, Accuracy: 100.00%
+Epoch [26/50], Step [200/206], Loss: 0.0014, Accuracy: 99.97%
+Accuracy of the network on the 7707 test clips: 75.75%
+Epoch [27/50], Step [100/206], Loss: 0.0013, Accuracy: 100.00%
+Epoch [27/50], Step [200/206], Loss: 0.0015, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 75.88%
+Epoch [28/50], Step [100/206], Loss: 0.0015, Accuracy: 100.00%
+Epoch [28/50], Step [200/206], Loss: 0.0012, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.23%
+Epoch [29/50], Step [100/206], Loss: 0.0018, Accuracy: 100.00%
+Epoch [29/50], Step [200/206], Loss: 0.0014, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 75.94%
+Epoch [30/50], Step [100/206], Loss: 0.0012, Accuracy: 100.00%
+Epoch [30/50], Step [200/206], Loss: 0.0018, Accuracy: 99.97%
+Accuracy of the network on the 7707 test clips: 76.16%
+Epoch [31/50], Step [100/206], Loss: 0.0017, Accuracy: 99.97%
+Epoch [31/50], Step [200/206], Loss: 0.0012, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.01%
+Epoch [32/50], Step [100/206], Loss: 0.0011, Accuracy: 100.00%
+Epoch [32/50], Step [200/206], Loss: 0.0016, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.36%
+Epoch [33/50], Step [100/206], Loss: 0.0011, Accuracy: 100.00%
+Epoch [33/50], Step [200/206], Loss: 0.0011, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.19%
+Epoch [34/50], Step [100/206], Loss: 0.0012, Accuracy: 100.00%
+Epoch [34/50], Step [200/206], Loss: 0.0013, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.31%
+Epoch [35/50], Step [100/206], Loss: 0.0015, Accuracy: 100.00%
+Epoch [35/50], Step [200/206], Loss: 0.0010, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.06%
+Epoch [36/50], Step [100/206], Loss: 0.0015, Accuracy: 100.00%
+Epoch [36/50], Step [200/206], Loss: 0.0010, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.18%
+Epoch [37/50], Step [100/206], Loss: 0.0013, Accuracy: 100.00%
+Epoch [37/50], Step [200/206], Loss: 0.0012, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 75.88%
+Epoch [38/50], Step [100/206], Loss: 0.0018, Accuracy: 99.97%
+Epoch [38/50], Step [200/206], Loss: 0.0012, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.33%
+Epoch [39/50], Step [100/206], Loss: 0.0014, Accuracy: 100.00%
+Epoch [39/50], Step [200/206], Loss: 0.0012, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.06%
+Epoch [40/50], Step [100/206], Loss: 0.0016, Accuracy: 100.00%
+Epoch [40/50], Step [200/206], Loss: 0.0013, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.35%
+Epoch [41/50], Step [100/206], Loss: 0.0012, Accuracy: 100.00%
+Epoch [41/50], Step [200/206], Loss: 0.0014, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.26%
+Epoch [42/50], Step [100/206], Loss: 0.0012, Accuracy: 100.00%
+Epoch [42/50], Step [200/206], Loss: 0.0018, Accuracy: 99.94%
+Accuracy of the network on the 7707 test clips: 75.88%
+Epoch [43/50], Step [100/206], Loss: 0.0012, Accuracy: 100.00%
+Epoch [43/50], Step [200/206], Loss: 0.0014, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 75.98%
+Epoch [44/50], Step [100/206], Loss: 0.0013, Accuracy: 100.00%
+Epoch [44/50], Step [200/206], Loss: 0.0011, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.15%
+Epoch [45/50], Step [100/206], Loss: 0.0010, Accuracy: 100.00%
+Epoch [45/50], Step [200/206], Loss: 0.0014, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.36%
+Epoch [46/50], Step [100/206], Loss: 0.0016, Accuracy: 99.97%
+Epoch [46/50], Step [200/206], Loss: 0.0012, Accuracy: 99.97%
+Accuracy of the network on the 7707 test clips: 75.88%
+Epoch [47/50], Step [100/206], Loss: 0.0014, Accuracy: 99.97%
+Epoch [47/50], Step [200/206], Loss: 0.0014, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 75.87%
+Epoch [48/50], Step [100/206], Loss: 0.0011, Accuracy: 100.00%
+Epoch [48/50], Step [200/206], Loss: 0.0013, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.15%
+Epoch [49/50], Step [100/206], Loss: 0.0012, Accuracy: 100.00%
+Epoch [49/50], Step [200/206], Loss: 0.0013, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 76.09%
+Epoch [50/50], Step [100/206], Loss: 0.0011, Accuracy: 100.00%
+Epoch [50/50], Step [200/206], Loss: 0.0011, Accuracy: 100.00%
+Accuracy of the network on the 7707 test clips: 75.98%
