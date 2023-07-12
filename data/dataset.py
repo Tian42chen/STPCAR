@@ -2,7 +2,7 @@ import os
 import sys
 import numpy as np
 from torch.utils.data import Dataset
-from .preprocess import load_pcd
+from .preprocess import load_pcd, disturb_data
 
 class MSRAction3D(Dataset):
     def __init__(
@@ -70,8 +70,7 @@ class MSRAction3D(Dataset):
 
         if self.train:
             # scale the points
-            scales = np.random.uniform(0.9, 1.1, size=3)
-            clip = clip * scales
+            clip=disturb_data(clip)
 
         clip = clip / 300
 
