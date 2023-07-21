@@ -50,7 +50,7 @@ def train(model, train_loader, test_loader, criterion, optimizer, lr_scheduler):
             if (i+1) % config.print_interval == 0:
                 log='Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}, Accuracy: {:.2f}%\n'.format(epoch+1, config.num_epochs, i+1, len(train_loader), running_loss/config.print_interval, running_acc/config.print_interval)
                 print (log, end='')
-                with open('log.txt', 'a') as f:
+                with open(f'{config.log_path}log.txt', 'a') as f:
                     f.write(log)
                 running_loss = 0.0
                 running_acc = 0.0

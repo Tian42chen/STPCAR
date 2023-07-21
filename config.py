@@ -21,6 +21,9 @@ data_path = './data/msr/testpcd/'
 # Model paths
 save_model_path = './checkpoints/'
 
+# log paths
+log_path = './logs/'
+
 # Model parameters
 ## P4DConv: spatial
 radius=0.7
