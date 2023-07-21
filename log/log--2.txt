@@ -1,4 +1,4 @@
-小数据
+小数据(作废)
 Epoch [1/30], Step [10/27], Loss: 2.9819, Accuracy: 5.62%
 Epoch [1/30], Step [20/27], Loss: 2.4775, Accuracy: 21.25%
 Accuracy of the network on the 77 test clips: 28.57%
