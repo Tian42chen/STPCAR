@@ -109,11 +109,11 @@ python preprocess.py
 运行`data/preprocess.py`，将深度图转换为点云数据，保存在`data/raw/point_clouds`目录下。读取深度图借鉴了 [MSR Action3D][msr] 中 matlab 代码
 
 #### HOI4D
-下载HOI4D的human hand pose数据，解压到`data/hoi4d/handpose`目录下，
+下载HOI4D的human hand pose数据，解压到`data/hoi4d/handpose`目录下，修改`data/preprocess.py` `mian` 中调用的函数
 ```
-python processHandpose.py
+python preprocess.py
 ```
-修改并运行`data/preprocess.py`，将手部的特征数据通过处理转换为点云数据，保存在`data/hoi4d/handposePcd`目录下。处理手部数据参考了 [manopth](https://github.com/hassony2/manopth) 和 [hoi4d](https://github.com/leolyliu/HOI4D-Instructions) 中的示例代码
+运行，将手部的特征数据通过处理转换为点云数据，保存在`data/hoi4d/handposePcd`目录下。处理手部数据参考了 [manopth](https://github.com/hassony2/manopth) 和 [hoi4d](https://github.com/leolyliu/HOI4D-Instructions) 中的示例代码
 
 ## Train
 ```
