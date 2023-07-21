@@ -34,7 +34,7 @@ def test(model, test_loader):
 
         log='Accuracy of the network on the {} test clips: {:.2f}%\n'.format(total, 100 * correct / total)
         print(log, end='')
-        with open('log.txt', 'a') as f:
+        with open(f'{config.log_path}log.txt', 'a') as f:
             f.write(log)
         
     print('Finished testing in {:.2f} seconds'.format(time.time() - start_time))
