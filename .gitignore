@@ -1,9 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,latex
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,latex
 
-data/raw/
-data/train/
-data/test/
+data/msr/
+data/hoi4d/
 checkpoints*/
 manopth/
 handpose/

@@ -7,7 +7,7 @@ import numpy as np
 import time
 
 from models import P4Transformer
-from data import MSRAction3D
+from data import MSRAction3D, HOI4D
 from utils import accuracy, WarmupMultiStepLR
 from test import test
 
@@ -69,6 +69,8 @@ def main():
     print('Loading data...')
     train_set = MSRAction3D(config.data_path, train=True)
     test_set = MSRAction3D(config.data_path, train=False)
+    # train_set = HOI4D(config.data_path, train=True)
+    # test_set = HOI4D(config.data_path, train=False)
 
     print(f'Number of training clips: {len(train_set)}')
     print(f'Number of test clips: {len(test_set)}')

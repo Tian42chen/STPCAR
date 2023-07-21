@@ -7,7 +7,7 @@ import numpy as np
 import time
 
 from models import P4Transformer
-from data import MSRAction3D
+from data import MSRAction3D, HOI4D
 from utils import accuracy
 import config
 
@@ -53,6 +53,7 @@ def main():
     # Load test set
     print('Loading data...')
     test_set = MSRAction3D(config.data_path, train=False)
+    # test_set = HOI4D(config.data_path, train=False)
 
     print(f'Number of test clips: {len(test_set)}')
 
