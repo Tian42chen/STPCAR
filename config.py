@@ -4,9 +4,8 @@ momentum = 0.9
 weight_decay = 1e-4
 batch_size = 16
 # num_epochs = 30
-# print_interval=10
 num_epochs = 50
-print_interval = 100
+print_pre_epoch = 10
 workers=4
 
 # lr_milestones=[12, 18]
@@ -41,4 +40,3 @@ heads=8
 dim_head=128
 ## output
 mlp_dim=2048
-num_classes=20 # 20 classes in MSRAction3D

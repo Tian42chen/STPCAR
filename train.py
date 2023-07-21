@@ -23,6 +23,7 @@ def train(model, train_loader, test_loader, criterion, optimizer, lr_scheduler):
     print('Training...')
     start_time = time.time()
     model.train()
+    print_interval=len(train_loader)//config.print_pre_epoch
     for epoch in range(config.num_epochs):
         running_loss = 0.0
         running_acc = 0.0
@@ -47,8 +48,8 @@ def train(model, train_loader, test_loader, criterion, optimizer, lr_scheduler):
             running_loss += loss.item()
             running_acc += acc1[0].item()
             
-            if (i+1) % config.print_interval == 0:
-                log='Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}, Accuracy: {:.2f}%\n'.format(epoch+1, config.num_epochs, i+1, len(train_loader), running_loss/config.print_interval, running_acc/config.print_interval)
+            if (i+1) % print_interval == 0:
+                log='Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}, Accuracy: {:.2f}%\n'.format(epoch+1, config.num_epochs, i+1, len(train_loader), running_loss/print_interval, running_acc/print_interval)
                 print (log, end='')
                 with open(f'{config.log_path}log.txt', 'a') as f:
                     f.write(log)
@@ -74,6 +75,7 @@ def main():
 
     print(f'Number of training clips: {len(train_set)}')
     print(f'Number of test clips: {len(test_set)}')
+    print(f'Number of classes: {train_set.num_classes}')
 
     print('Creating data loader...')
     train_loader = torch.utils.data.DataLoader(train_set, batch_size=config.batch_size, shuffle=True, num_workers=config.workers)
@@ -86,7 +88,7 @@ def main():
         temporal_kernel_size=config.temporal_kernel_size, temporal_stride=config.temporal_stride, # P4DConv: temporal
         emb_complex=config.emb_complex,  # embedding: relu
         dim=config.dim, depth=config.depth, heads=config.heads, dim_head=config.dim_head,  # transformer
-        mlp_dim=config.mlp_dim, num_classes=config.num_classes # output
+        mlp_dim=config.mlp_dim, num_classes=train_set.num_classes # output
     ).to(device)
 
     print(
