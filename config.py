@@ -15,7 +15,8 @@ lr_gamma=0.1
 lr_warmup_epochs=10
 
 # Data paths
-data_path = './data/raw/testpcd/'
+data_path = './data/msr/testpcd/'
+# data_path = './data/hoi4d/handposePcd/'
 
 # Model paths
 save_model_path = './checkpoints/'

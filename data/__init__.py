@@ -1,1 +1,1 @@
-from .dataset import MSRAction3D
+from .dataset import MSRAction3D, HOI4D
