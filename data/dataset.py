@@ -102,7 +102,7 @@ class HOI4D(Dataset):
                 not train
                 and (video_name.split("_")[0] == 'right')
                 and (int(video_name.split("_")[1].split("Y")[1]) > 20210800001) and (int(video_name.split("_")[1].split("Y")[1]) <= 20210800002)
-                and (int(video_name.split("_")[2][1:]) == 1 )
+                and (int(video_name.split("_")[2][1:]) == 2 )
                 
             ):
                 video = load_pcd(root, video_name[:video_name.rfind('_')])

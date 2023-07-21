@@ -32,7 +32,7 @@ spatial_stride=32
 temporal_kernel_size=3
 temporal_stride=2
 ## embedding: relu
-emb_complex=True
+emb_complex=False
 # Transformer
 dim=1024
 depth=5

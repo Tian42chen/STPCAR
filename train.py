@@ -74,8 +74,10 @@ def main():
     # test_set = HOI4D(config.data_path, train=False)
 
     print(f'Number of training clips: {len(train_set)}')
+    print(f'Number of training classes: {train_set.num_classes}')
     print(f'Number of test clips: {len(test_set)}')
-    print(f'Number of classes: {train_set.num_classes}')
+    print(f'Number of test classes: {test_set.num_classes}')
+
 
     print('Creating data loader...')
     train_loader = torch.utils.data.DataLoader(train_set, batch_size=config.batch_size, shuffle=True, num_workers=config.workers)
