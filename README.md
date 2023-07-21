@@ -119,14 +119,16 @@ python preprocess.py
 ```
 python train.py
 ```
-在config.py中设置参数，训练模型  
-训练 log 会保存在 `log_path/log.txt` 之中
+在config.py中设置参数，训练模型    
+训练 log 会保存在 `log_path/log.txt` 之中   
+对于不同的数据集需要更改 `train.py` 中的 dataset 
 
 ## Test
 ```
 python test.py
 ```
 在config.py中设置参数，测试模型
+同样对于不同的数据集需要更改 `test.py` 中的 dataset 
 
 
  [msr]:https://sites.google.com/view/wanqingli/data-sets/msr-action3d
