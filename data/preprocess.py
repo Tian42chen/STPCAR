@@ -22,10 +22,10 @@ def disturb_data(clip):
 
     # 将旋转、平移和缩放矩阵组合成一个变换矩阵
     trans_mat = np.dot(rot_mat, scale_mat)
-    trans_mat[:, 2] = trans_vec
+    # trans_mat[:, 2] = trans_vec
 
     # 将变换矩阵应用到点云数组上
-    return np.dot(clip, trans_mat.T)
+    return np.dot(clip, trans_mat.T)+trans_vec*clip
 
 def loadDepthMap(path):
     """
