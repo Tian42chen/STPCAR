@@ -60,10 +60,32 @@ actions 对应的动作类型如下：
 1. pick up & throw
 
 ### HOI4D
-TODO
+使用[HOI4D](https://www.hoi4d.top/#downLoad)中的Hand Pose数据集。HOI4D 由 2.4M RGB-D 以自我为中心的视频帧组成，超过 4000 个序列，由 9 名参与者与来自 610 个不同室内房间的 16 个类别的 800 个不同对象实例进行交互。Hand Pose数据集根据每个视频中的MANO参数呈现手部姿势。在每个文件中：`.pickle`
+- `"poseCoeff"`：指 3 个全局旋转 + 45 个 mano 姿势参数
+- `"beta"`：指 10 个马诺形状参数。每个人类ID H*的形状是相同的。
+- `"trans"` ：指手在相机框架中的平移
+- `"kps2D"`：指每张图像上渲染的手部姿势的21个关键点投影协调。
 
-## Installation
+./ZY2021080000*/H*/C*/N*/S*/s*/T*/ 目录：
+- ZY2021080000* refers to the camera ID.
+- H* refers to human ID.
+- C* refers to object class.
+```
+mapping = [
+    '', 'ToyCar', 'Mug', 'Laptop', 'StorageFurniture', 'Bottle',
+    'Safe', 'Bowl', 'Bucket', 'Scissors', '', 'Pliers', 'Kettle',
+    'Knife', 'TrashCan', '', '', 'Lamp', 'Stapler', '', 'Chair'
+]
+```
+- N* refers to object instance ID.
+- S* refers to the room ID.
+- s* refers to the room layout ID.
+- T* refers to the task ID.
+
+具体内容参考 [HOI4D-Instruction](https://github.com/leolyliu/HOI4D-Instructions) 的说明
+## Installation 
 ### Set up the Python environment
+#### MSR-Action3D
 ```
 pip install -r requirements.txt
 
@@ -75,6 +97,8 @@ python setup.py install
 <!-- ~~这里使用 github copilot chat 把 cuda 的代码转化为了 c++ 的代码以支持 cpu，但是没有测试过，可能会有问题~~
 
 太多函数是使用 cuda 实现的了, 难以支持 cpu 版本 -->
+#### HOI4D
+从 [这里](https://github.com/hassony2/manopth) 下载manopth，然后将manopth文件夹放入`data`目录下
 
 ### Set up datasets
 #### MSR-Action3D
@@ -85,7 +109,11 @@ python preprocess.py
 运行`data/preprocess.py`，将深度图转换为点云数据，保存在`data/raw/point_clouds`目录下。读取深度图借鉴了 [MSR Action3D][msr] 中 matlab 代码
 
 #### HOI4D
-TODO
+下载HOI4D的human hand pose数据，解压到`data/handpose`目录下，
+```
+python processHandpose.py
+```
+运行`data/processHandpose.py`，将手部的特征数据通过处理转换为点云数据，保存在`data/handposePcd`目录下。处理手部数据参考了 [manopth](https://github.com/hassony2/manopth) 和 [hoi4d](https://github.com/leolyliu/HOI4D-Instructions) 中的示例代码
 
 ## Train
 ```
