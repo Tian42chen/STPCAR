@@ -86,7 +86,7 @@ class P4DConv(nn.Module):
                 feature = torch.max(feature, dim=-1, keepdim=False)[0] # (B, C, N//S)
                 new_feature.append(feature)
             
-            new_feature = torch.stack(tensors=new_feature, dim=1) # (B, T, C, N//S)
+            new_feature = torch.stack(tensors=new_feature, dim=1) # (B, TKS, C, N//S)
             new_feature = torch.max(new_feature, dim=1, keepdim=False)[0] # (B, C, N//S)
 
             new_points.append(anchor_points)

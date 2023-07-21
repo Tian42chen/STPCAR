@@ -10,6 +10,27 @@ import pickle
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+def disturb_data(clip):
+    # 随机生成旋转矩阵
+    theta = np.random.uniform(-np.pi/4, np.pi/4)
+    rot_mat = np.array([[np.cos(theta), -np.sin(theta), 0],
+                        [np.sin(theta), np.cos(theta), 0],
+                        [0, 0, 1]])
+
+    # 随机生成平移矩阵
+    trans_vec = np.random.uniform(-0.1, 0.1, size=(1, 3))
+
+    # 随机生成缩放矩阵
+    scale_vec = np.random.uniform(0.9, 1.1, size=(1, 3))
+    scale_mat = np.diag(scale_vec[0])
+
+    # 将旋转、平移和缩放矩阵组合成一个变换矩阵
+    trans_mat = np.dot(rot_mat, scale_mat)
+    # trans_mat[:, 2] = trans_vec
+
+    # 将变换矩阵应用到点云数组上
+    return np.dot(clip, trans_mat.T)+trans_vec*clip
+
 def loadDepthMap(path):
     """
     This function reads a depth image from MSR Action3D dataset

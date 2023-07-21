@@ -13,7 +13,7 @@ class P4Transformer(nn.Module):
         self,
         radius, nsamples, spatial_stride,      # P4DConv: spatial
         temporal_kernel_size, temporal_stride, # P4DConv: temporal
-        emb_relu,                              # embedding: relu
+        emb_complex,                              # embedding: complex
         dim, depth, heads, dim_head,           # transformer
         mlp_dim, num_classes                   # output
     ):
@@ -30,7 +30,10 @@ class P4Transformer(nn.Module):
 
         self.pos_embedding = nn.Conv1d(in_channels=4, out_channels=dim, kernel_size=1, stride=1, padding=0, bias=True)
 
-        self.emb_relu = nn.ReLU() if emb_relu else False
+        self.emb_complex = nn.Sequential(
+            nn.GELU(),
+            nn.Linear(2*dim, dim)
+        ) if emb_complex else False
 
         self.transformer = Transformer(
             dim=dim,
@@ -72,10 +75,11 @@ class P4Transformer(nn.Module):
 
         points = self.pos_embedding(points.permute(0, 2, 1)).permute(0, 2, 1) # [B, L*n, C]
 
-        embedding = points + features # [B, L*n, C]
 
-        if self.emb_relu:
-            embedding = self.emb_relu(embedding)
+        if self.emb_complex:
+            embedding = self.emb_complex(torch.cat((points, features), dim=-1)) # [B, L*n, C]
+        else:
+            embedding = points + features # [B, L*n, C]
 
         output = self.transformer(embedding) # [B, L*n, C']
         output = torch.max(input=output, dim=1, keepdim=False, out=None)[0] # [B, C']

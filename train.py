@@ -84,14 +84,14 @@ def main():
     model = P4Transformer(
         radius=config.radius, nsamples=config.nsamples, spatial_stride=config.spatial_stride, # P4DConv: spatial
         temporal_kernel_size=config.temporal_kernel_size, temporal_stride=config.temporal_stride, # P4DConv: temporal
-        emb_relu=config.emb_relu,  # embedding: relu
+        emb_complex=config.emb_complex,  # embedding: relu
         dim=config.dim, depth=config.depth, heads=config.heads, dim_head=config.dim_head,  # transformer
         mlp_dim=config.mlp_dim, num_classes=config.num_classes # output
     ).to(device)
 
-    # print(
-    #     f"Total number of paramerters in networks is {sum(x.numel() for x in model.parameters())}  "
-    # )
+    print(
+        f"Total number of paramerters in networks is {sum(x.numel() for x in model.parameters())}  "
+    )
 
     print('Creating optimizer...')
     criterion = nn.CrossEntropyLoss()

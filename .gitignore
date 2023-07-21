@@ -4,7 +4,11 @@
 data/msr/
 data/hoi4d/
 checkpoints*/
+manopth/
+handpose/
+handposepcd/
 STPCAR.pdf
+Presentation.pdf
 *.ipynb
 
 ### LaTeX ###

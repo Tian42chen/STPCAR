@@ -3,14 +3,14 @@ learning_rate = 0.01
 momentum = 0.9
 weight_decay = 1e-4
 batch_size = 16
-num_epochs = 30
-print_interval=10
-# num_epochs = 50
-# print_interval = 100
+# num_epochs = 30
+# print_interval=10
+num_epochs = 50
+print_interval = 100
 workers=4
 
-lr_milestones=[12, 18]
-# lr_milestones=[20, 30]
+# lr_milestones=[12, 18]
+lr_milestones=[20, 30]
 lr_gamma=0.1
 lr_warmup_epochs=10
 
@@ -30,7 +30,7 @@ spatial_stride=32
 temporal_kernel_size=3
 temporal_stride=2
 ## embedding: relu
-emb_relu=False
+emb_complex=True
 # Transformer
 dim=1024
 depth=5

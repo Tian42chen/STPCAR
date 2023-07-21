@@ -1,3 +1,4 @@
+纯炼丹
 Epoch [1/50], Step [100/742], Loss: 3.0622, Accuracy: 5.88%
 Epoch [1/50], Step [200/742], Loss: 3.0206, Accuracy: 7.44%
 Epoch [1/50], Step [300/742], Loss: 3.0282, Accuracy: 5.62%
