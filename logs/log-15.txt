@@ -1,4 +1,4 @@
-hoi4d
+hoi4d 空间卷积尺度错误(过大)
 Epoch [1/50], Step [100/1164], Loss: 2.2369, Accuracy: 35.94%
 Epoch [1/50], Step [200/1164], Loss: 1.3534, Accuracy: 47.00%
 Epoch [1/50], Step [300/1164], Loss: 1.2885, Accuracy: 48.56%

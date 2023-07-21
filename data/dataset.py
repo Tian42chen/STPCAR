@@ -148,9 +148,8 @@ class HOI4D(Dataset):
 
         if self.train:
             # scale the points
-            scales = np.random.uniform(0.9, 1.1, size=3)
-            clip = clip * scales
+            clip=disturb_data(clip)
 
-        clip = clip / 300
+        # clip = clip / 300
 
         return clip.astype(np.float32), label
