@@ -1,0 +1,7 @@
+einops==0.6.1
+matplotlib==3.6.2
+numpy==1.23.5
+setuptools==65.6.3
+torch==1.13.1
+torchvision==0.14.1
+manopth>=0.2.0
